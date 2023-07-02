@@ -1,0 +1,42 @@
+## @file
+#  Default instance of MemLogLib library for simple log services to memory buffer.
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MemLogLibDefault
+  FILE_GUID                      = 62F5C426-2B49-11E2-8DA0-CFED6188709B
+  MODULE_TYPE                    = BASE
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = MemLogLib 
+#  CONSTRUCTOR                    = MemLogLibDefaultConstructor
+
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  MemLogLib.c
+  GenericIch.h
+  printf_lite.h
+  printf_lite.c
+  ../../Include/Library/printf_lite.h
+  ../../Include/Library/printf_lite-conf.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  CloverPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  PrintLib
+  MemoryAllocationLib
+  UefiBootServicesTableLib
+  DebugLib
+  PciLib
+  IoLib
+  BaseDebugPrintErrorLevelLib
+  BaseSerialPortLib
+
+

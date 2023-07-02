@@ -1,0 +1,173 @@
+#!/bin/bash
+SCRIPT_ABS_FILENAME=`LC_ALL=en_US.ISO8859-1 perl -e 'use Cwd "abs_path";print abs_path(shift)' "${BASH_SOURCE[0]}"`
+SCRIPT_DIR=`dirname "$SCRIPT_ABS_FILENAME"`
+
+
+OSTYPE=`uname -s`
+#echo $OSTYPE
+
+echo pwd = $(pwd)
+
+#env
+#echo "$@"
+
+
+function do_it
+{
+  project_dir="$1"
+  echo project_dir="$project_dir"
+  debug_executable="$project_dir"/"$2"
+  echo debug_executable="$debug_executable"
+  debug_executable_name=$(basename "$debug_executable")
+  echo debug_executable_name="$debug_executable_name"
+  debug_executable_name_without_extension="${debug_executable_name%.*}"
+  echo debug_executable_name_without_extension="$debug_executable_name_without_extension"
+  executable_path="$(dirname "$debug_executable")"
+  echo executable_path="$executable_path"
+  executable_dirname="${executable_path##*/}"
+  echo executable_dirname="$executable_dirname"
+  if [[ "$executable_dirname" == "DWARF" ]]
+  then
+    efi_executable_path="$executable_path"/../../../..
+  else
+    efi_executable_path="$executable_path"
+  fi
+  echo efi_executable_path="$efi_executable_path"
+  efi_executable_name="$debug_executable_name_without_extension".efi
+  echo efi_executable_name="$efi_executable_name"
+  efi_executable="$efi_executable_path"/"$efi_executable_name"
+  echo efi_executable="$efi_executable"
+
+  if [ "$OSTYPE" = "Linux" ]
+  then
+    : # todo
+  fi
+
+
+
+  #set -x
+
+  if [ "$OSTYPE" = "Darwin" ]
+  then
+    if [ -f "$SCRIPT_DIR"/qemu_portable-v5.2.0/qemu-system-x86_64 ]
+    then
+      bios_path="$SCRIPT_DIR"/qemu_portable-v5.2.0
+      qemu_cmd="$SCRIPT_DIR"/qemu_portable-v5.2.0/qemu-system-x86_64
+    else
+      if [ -f /usr/local/bin/qemu-system-x86_64 ]
+      then
+        bios_path="$(dirname $(which qemu))"
+        qemu_cmd=qemu
+      else
+        echo "You must install Qemu with \"brew install qemu\"", or restore the folder \'qemu_portable\'
+        exit 1
+      fi
+      echo "You must install Qemu with \"brew install qemu\""
+      exit 1
+    fi
+    if ! [ -f "$SCRIPT_DIR"/disk_image_gpt.img ]
+    then
+      unzip -o "$SCRIPT_DIR"/disk_image_gpt.img.zip
+      rm -rf "$SCRIPT_DIR"/__MACOSX
+    fi
+
+    if pgrep qemu
+    then
+      killall qemu-system-x86_64
+    fi
+    > "$SCRIPT_DIR"/serial0_qemu_out.log # empty file without erasing it. Useful for editor for refreshing and reloading.
+
+    hdiutil attach "$SCRIPT_DIR"/disk_image_gpt.img || exit 1
+
+    shopt -s nocasematch
+
+    if [[ "$efi_executable_name" == "CloverX64.efi" ]]
+    then
+      echo ditto "$efi_executable" /Volumes/QEMU_EFI/EFI/CLOVER/"$efi_executable_name"
+           ditto "$efi_executable" /Volumes/QEMU_EFI/EFI/CLOVER/"$efi_executable_name" || exit 1
+
+    else
+      if [[ "$efi_executable_name" == "BootloaderChooserX64.efi" ]]
+      then
+        echo ditto "$efi_executable" /Volumes/QEMU_EFI/EFI/BOOT/BOOTX64.efi
+             ditto "$efi_executable" /Volumes/QEMU_EFI/EFI/BOOT/BOOTX64.efi || exit 1
+      else
+        : # if it's a module, has to be copied in Drivers
+        echo WARNING \: Nothing copied to qemu disk image.
+      fi
+    fi
+
+    shopt -u nocasematch
+
+    diskutil eject /Volumes/QEMU_EFI || exit 1
+
+    bios_file=("$bios_path"/bios*)
+    #echo bios_file="$bios_file"
+
+    cd "$SCRIPT_DIR"
+      
+    "$qemu_cmd" \
+      -L "$bios_path" \
+      -m 2048 \
+      -cpu core2duo \
+      -bios "$bios_file" \
+      -machine q35 \
+      -device VGA,vgamem_mb=64,edid=on,xres=1024,yres=768 \
+      -device ahci,id=ahi \
+      -drive format=raw,id=hda,file=./disk_image_gpt.img \
+      -usb \
+      -device usb-mouse,bus=usb-bus.0,port=2 \
+      -device usb-kbd,bus=usb-bus.0,port=1 \
+      -serial file:./serial0_qemu_out.log \
+      -nic none \
+      -gdb tcp::9000 &
+      [[ $? == 0 ]] || exit 1
+
+    #      -cdrom "[path to iso file]" \
+
+    set +m
+
+    count=1
+    timeout=60
+    image_base_str="$executable_name_without_extension : Image base = "
+
+      getImageBase() {
+      [ -f ./serial0_qemu_out.log ] || return 1
+      grep "$image_base_str" ./serial0_qemu_out.log
+      return $?
+    }
+
+
+    while [ $count -le $timeout ] && ! getImageBase
+    do
+      sleep 1
+      count=$((count+1))
+    done
+
+    if [ $count -ge $timeout ]
+    then
+      echo Cannot find "\"$image_base_str\"" in ./serial0_qemu_out.log after $timeout seconds
+      exit 1
+    fi
+
+    adr="$(grep "$image_base_str" ./serial0_qemu_out.log | awk '{printf "0x%x",$8/NR}')"
+    echo adr="$adr"
+
+
+    echo ovh.knudsen.jf.launch.vmware.efi.adr="$adr"
+    exit 0
+
+
+
+  fi
+
+  # Windows ???
+  #if [ "$OSTYPE" = "FreeBSD" ]
+  #then
+  #fi
+
+}
+
+do_it "$@"
+
+

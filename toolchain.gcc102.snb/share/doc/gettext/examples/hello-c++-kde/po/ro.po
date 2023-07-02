@@ -1,0 +1,38 @@
+# Mesajele în limba română pentru pachetul hello-c++-kde.
+# Copyright (C) 2015 Yoyodyne, Inc. (msgids)
+# This file is distributed under the same license as the gettext package.
+# Eugen Hoancă <eugenh@urban-grafx.ro>, 2003
+# Mihai Cristescu <mihai.cristescu@archlinux.info>, 2015
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hello-c++-kde 0.20-rc1\n"
+"Report-Msgid-Bugs-To: bug-gettext@gnu.org\n"
+"PO-Revision-Date: 2019-04-18 11:49+0300\n"
+"Last-Translator: Mihai Cristescu <mihai.cristescu@gmail.com>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: hello.cc:46
+msgid "Hello example"
+msgstr "Exemplu Salut"
+
+#: hello.cc:48
+msgid "Hello world example"
+msgstr "Exemplu Salut lume"
+
+#: hellowindow.cc:42
+msgid "Hello, world!"
+msgstr "Salut, lume!"
+
+#: hellowindow.cc:49
+#, qt-format
+msgid "This program is running as process number %1."
+msgstr "Acest program rulează ca procesul numărul %1."

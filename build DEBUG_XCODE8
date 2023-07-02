@@ -1,0 +1,44 @@
+#!/bin/bash
+SCRIPT_ABS_FILENAME=`LC_ALL=en_US.ISO8859-1 perl -e 'use Cwd "abs_path";print abs_path(shift)' "${BASH_SOURCE[0]}"`
+SCRIPT_DIR=`dirname "$SCRIPT_ABS_FILENAME"`
+
+if ! [ -d MdePkg ]
+then
+	echo this script must execute from UDK folder containing OpenCorePkg folder
+	exit 1
+fi
+if ! [ -d rEFIt_UEFI ]
+then
+	echo this script must execute from UDK folder containing BootloaderChooser folder
+	exit 1
+fi
+
+njobs=9
+while getopts ":n:" opt; do
+  case $opt in
+    n)
+      njobs=$OPTARG
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
+shift $((OPTIND-1))
+
+export TOOLCHAIN_DIR="$PWD"/../../toolchain
+#export GCC5_BIN="$TOOLCHAIN_DIR"/cross/bin/x86_64-clover-linux-gnu-
+export NASM_PREFIX="$TOOLCHAIN_DIR"/bin/
+export MTOC_PREFIX="$TOOLCHAIN_DIR"/bin/
+export PYTHON_COMMAND=python3 # todo : detect python version instead of hardcoding
+
+rm -rf Conf
+mkdir Conf
+source edksetup.sh
+
+make -C BaseTools
+
+"$SCRIPT_DIR"/generate_version
+
+### NOTE : Use -n 1 for making with only one job
+build -a X64 -b DEBUG -t XCODE8 -D DEBUG_ON_SERIAL_PORT -p Clover.dsc -n $njobs $@

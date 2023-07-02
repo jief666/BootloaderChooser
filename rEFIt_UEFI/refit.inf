@@ -1,0 +1,216 @@
+## @file
+#  Sample UEFI Application Reference EDKII Module
+#
+#
+#  Copyright (c) 2009 - 2010, Intel Corporation. All rights reserved.<BR>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+#
+##
+
+[Defines]
+  INF_VERSION                   = 0x00010005
+  BASE_NAME                     = BootloaderChooserX64
+  FILE_GUID                     = 8F7D7B1E-0E1C-4C98-B12E-4EC99C4081AC
+  MODULE_TYPE                   = UEFI_APPLICATION
+  EDK_RELEASE_VERSION			= 0x00020000
+  EFI_SPECIFICATION_VERSION		= 0x00010000
+  VERSION_STRING                = 1.0
+  ENTRY_POINT                   = RefitMain
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC
+#
+
+[Sources]
+  ../Include/Library/printf_lite-conf.h
+  ../Include/Library/printf_lite.h
+  cpp_foundation/unicode_conversions.cpp
+  cpp_foundation/unicode_conversions.h
+  cpp_foundation/XArray.h
+  cpp_foundation/XBuffer.cpp
+  cpp_foundation/XBuffer.h
+  cpp_foundation/XRBuffer.cpp
+  cpp_foundation/XRBuffer.h
+  cpp_foundation/XObjArray.h
+  cpp_foundation/XStringAbstract.h
+  cpp_foundation/XString.cpp
+  cpp_foundation/XString.h
+  cpp_foundation/XStringArray.cpp
+  cpp_foundation/XStringArray.h
+  cpp_foundation/XStringArray.cpp
+  cpp_foundation/XToolsCommon.h
+  include/Devices.h
+  include/Efi.h
+  include/Handle.h
+  include/OneLinerMacros.h
+  include/Pci.h
+  include/XToolsConf.h
+  entry_scan/common.cpp
+  entry_scan/common.h
+  entry_scan/entry_scan.h
+  entry_scan/loader.h
+  entry_scan/loader.cpp
+  gui/menu_items/menu_items.h
+  gui/menu_items/menu_items.cpp
+  gui/menu_items/menu_globals.h
+  gui/REFIT_MENU_SCREEN.cpp
+  gui/REFIT_MENU_SCREEN.h
+  libeg/BmLib.h
+  libeg/BmLib.cpp
+  libeg/FloatLib.cpp
+  libeg/FloatLib.h
+  libeg/libscreen.h
+  libeg/libscreen.cpp
+  libeg/text.cpp
+  Platform/plist/base64.h
+  Platform/plist/base64.cpp
+  Platform/plist/plist.h
+  Platform/plist/plist.cpp
+  Platform/plist/TagArray.h
+  Platform/plist/TagArray.cpp
+  Platform/plist/TagBool.h
+  Platform/plist/TagBool.cpp
+  Platform/plist/TagData.h
+  Platform/plist/TagData.cpp
+  Platform/plist/TagDate.h
+  Platform/plist/TagDate.cpp
+  Platform/plist/TagDict.h
+  Platform/plist/TagDict.cpp
+  Platform/plist/TagFloat.h
+  Platform/plist/TagFloat.cpp
+  Platform/plist/TagInt64.h
+  Platform/plist/TagInt64.cpp
+  Platform/plist/TagKey.h
+  Platform/plist/TagKey.cpp
+  Platform/plist/TagString8.h
+  Platform/plist/TagString8.cpp
+  Platform/plist/xml.h
+  Platform/plist/xml.cpp
+  Platform/b64cdecode.h
+  Platform/b64cdecode.cpp
+  Platform/CloverVersion.h
+  Platform/CloverVersion.cpp
+	Platform/BasicIO.h
+	Platform/BootLog.h
+	Platform/Events.cpp
+	Platform/Events.h
+  Platform/FileOperation.h
+  Platform/Settings.cpp
+  Platform/Settings.h
+  Platform/Utils.cpp
+  Platform/Utils.h
+  Platform/Volume.cpp
+  Platform/Volume.h
+  Platform/Volumes.cpp
+  Platform/Volumes.h
+  PlatformEFI/FileOperation.cpp
+  PlatformEFI/BasicIO.cpp
+  PlatformEFI/BootLog.cpp
+  PlatformEFI/cpp_util/globals_ctor.cpp
+  PlatformEFI/cpp_util/globals_ctor.h
+  PlatformEFI/cpp_util/globals_dtor.cpp
+  PlatformEFI/cpp_util/globals_dtor.h
+  PlatformEFI/cpp_util/operatorNewDelete.cpp
+  PlatformEFI/cpp_util/operatorNewDelete.h
+  PlatformEFI/cpp_util/pure_virtual.cpp
+  PlatformEFI/include/Platform.h
+  PlatformEFI/include/printf_lite-test-cpp_conf.h
+  PlatformEFI/include/printlib-test-cpp_conf.h
+  PlatformEFI/include/XToolsConf.h
+  PlatformEFI/posix/abort.cpp
+  PlatformEFI/posix/abort.h
+  PlatformEFI/posix/limits.h
+  PlatformEFI/posix/posix.h
+  PlatformEFI/posix/posix_additions.cpp
+  PlatformEFI/posix/posix_additions.h
+  PlatformEFI/posix/stdarg.h
+  PlatformEFI/posix/stdbool.h
+  PlatformEFI/posix/stddef.h
+  PlatformEFI/posix/stdint.h
+  PlatformEFI/posix/stdio.cpp
+  PlatformEFI/posix/stdio.h
+  PlatformEFI/posix/stdlib.h
+  PlatformEFI/posix/string.cpp
+  PlatformEFI/posix/string.h
+  PlatformEFI/posix/strings.cpp
+  PlatformEFI/posix/strings.h
+  PlatformEFI/posix/strlen.cpp
+  PlatformEFI/posix/wchar.cpp
+  PlatformEFI/posix/wchar.h
+
+  Settings/Self.cpp
+  Settings/Self.h
+
+  refit/lib.cpp
+  refit/lib.h
+  refit/main.cpp
+  refit/menu.cpp
+  refit/menu.h
+  refit/screen.cpp
+  refit/screen.h
+
+[Sources.IA32]
+  libeg/ftol.asm | MSFT
+
+[Packages]
+  CloverPkg.dec
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  IntelFrameworkPkg/IntelFrameworkPkg.dec
+  IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  GenericBdsLib
+  DebugPrintErrorLevelLib
+  PciLib
+  CppMemLib
+  MemLogLib
+
+[Guids]
+  gEfiPartTypeSystemPartGuid
+  gEfiFileSystemInfoGuid
+  gEfiFileSystemVolumeLabelInfoIdGuid
+ 
+
+[Ppis]
+
+[Protocols]
+  gEfiUnicodeCollation2ProtocolGuid
+  gEfiUnicodeCollationProtocolGuid
+  gEfiScsiIoProtocolGuid
+ 
+[FeaturePcd]
+  gEfiMdePkgTokenSpaceGuid.PcdUgaConsumeSupport
+
+[Pcd]
+
+#[BuildOptions]
+#  XCODE:*_*_*_CC_FLAGS = -fsigned-char -O2 -fno-omit-frame-pointer      -ffreestanding -fno-rtti -fno-exceptions -Wno-deprecated -Wno-writable-strings -Wno-unused-const-variable -DJCONST=CONST -Wno-incompatible-ms-struct
+#  GCC:*_*_*_CC_FLAGS = -std=c99 -fno-omit-frame-pointer -maccumulate-outgoing-args
+#  GCC:*_*_*_CXX_FLAGS = -std=c++11 -fno-omit-frame-pointer -maccumulate-outgoing-args   -ffreestanding -fno-rtti -fno-exceptions -Wno-deprecated -Wno-write-strings -Wno-unused-const-variable -Wno-pointer-arith -DJCONST=CONST
+#  MSFT:*_*_*_CC_FLAGS = /Os /wd4201 /D JCONST=const
+
+[BuildOptions]
+
+  # -fno-rtti is only for C++
+
+  XCODE:*_*_*_CC_FLAGS  = -fno-use-cxa-atexit -fno-omit-frame-pointer -fno-exceptions -DJCONST=CONST -Wno-incompatible-ms-struct #-Wunused-parameter
+  XCODE:*_*_*_CXX_FLAGS = -fno-use-cxa-atexit -fno-omit-frame-pointer -fno-rtti -fno-exceptions -DJCONST=CONST -Wno-incompatible-ms-struct #-Wunused-parameter
+
+  GCC:*_*_*_CC_FLAGS = -fno-omit-frame-pointer -DJCONST=CONST
+  GCC:*_*_*_CXX_FLAGS = -fno-omit-frame-pointer -fno-rtti -DJCONST=CONST
+
+  MSFT:*_*_*_CC_FLAGS = /wd4201 /D JCONST=const
+  #TODO re-enable warnings
+  MSFT:*_*_*_CXX_FLAGS = /wd4201 /wd4244 /wd4267 /D JCONST=const

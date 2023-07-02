@@ -1,0 +1,37 @@
+#!/bin/bash
+SCRIPT_ABS_FILENAME=`LC_ALL=en_US.ISO8859-1 perl -e 'use Cwd "abs_path";print abs_path(shift)' "${BASH_SOURCE[0]}"`
+SCRIPT_DIR=`dirname "$SCRIPT_ABS_FILENAME"`
+
+cd "$SCRIPT_DIR"
+BootloaderChooser_revision=$(git describe --tags --abbrev=0)
+BootloaderChooser_build_date=$(date '+%Y-%m-%d %H:%M:%S')
+#echo "#define FIRMWARE_VERSION \"2.31\"" > Version.h
+
+echo "#define FIRMWARE_BUILDDATE \"${BootloaderChooser_build_date}\"" > Version.h
+echo "#define FIRMWARE_REVISION \"${BootloaderChooser_revision}\""   >> Version.h
+
+sha1="(github unknown)"
+if [[ -d .git ]]; then
+  sha1="($(git rev-parse --abbrev-ref HEAD), commit $(git rev-parse --short HEAD))"
+fi
+echo "#define REVISION_STR \"BootloaderChooser revision: ${BootloaderChooser_revision} $sha1\"" >> Version.h
+
+rev_date=$(git show -s --format=%ci $(git rev-parse HEAD))
+echo "#define REVISION_DATE \"${rev_date}\"" >> Version.h
+COMMIT_HASH="$(git rev-parse HEAD)"
+echo "#define COMMIT_HASH \"$COMMIT_HASH\"" >> Version.h
+#build_id_date="$(date +%Y%m%d%H%M%S)"
+build_id_date="$(git show -s --format=%cd --date=format:%Y%m%d%H%M%S)"
+number_of_commit="$(git rev-list tags/$(git describe --tags --abbrev=0)..HEAD --count)"
+if [ $number_of_commit -gt 0 ]
+then
+  build_id="$build_id_date"-"${COMMIT_HASH::7}"
+else
+  build_id="$build_id_date"-"${COMMIT_HASH::7}"-"$BootloaderChooser_revision"
+fi
+if [[ -n $(git status -s) ]]
+then
+  build_id="$build_id"-dirty
+fi
+echo "#define BUILD_ID \"$build_id\"" >> Version.h
+
