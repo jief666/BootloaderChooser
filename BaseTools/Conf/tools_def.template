@@ -2597,7 +2597,7 @@ RELEASEMACOS_XCODE8_X64_DLINK_FLAGS      = -arch x86_64 -nostdlib -Wl,-u,_$(IMAG
 # -Wno-varargs
 # -Wno-unused-const-variable
 
-         DEFINE XCODE8_COMMON_FLAGS      =  -nostdinc -c -Wall -Wextra -include AutoGen.h -fno-ms-extensions -fno-stack-protector -fno-builtin -fshort-wchar -mms-bitfields -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -mno-red-zone -fno-common -fdata-sections -ffreestanding -ffunction-sections -fno-asynchronous-unwind-tables -m64 -mabi=ms -mcmodel=small -DNO_MSABI_VA_FUNCS -fno-strict-aliasing -Wno-unused-parameter
+         DEFINE XCODE8_COMMON_FLAGS      =  -nostdinc -c -Wall -Wextra -include AutoGen.h -fno-ms-extensions -fno-stack-protector -fno-builtin -fshort-wchar -mms-bitfields -DSTRING_ARRAY_NAME=$(BASE_NAME)Strings -mno-red-zone -fno-common -fdata-sections -ffreestanding -ffunction-sections -fno-asynchronous-unwind-tables -m64 -mabi=ms -mcmodel=small -DNO_MSABI_VA_FUNCS -fno-strict-aliasing -Wno-unused-parameter -Wno-unused-command-line-argument
  
 
 
