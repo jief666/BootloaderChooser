@@ -97,28 +97,27 @@ LoadUserSettings (
 
 void savePreferencesFile()
 {
-  XString8 buf;
 
-//  const REFIT_ABSTRACT_MENU_ENTRY& abstractMenuItemDefaultVolume = OptionMenu.Entries["Default volume: "];
-//  const REFIT_INPUT_DIALOG& menuItemDefaultVolume = *abstractMenuItemDefaultVolume.getREFIT_INPUT_DIALOG();
-//
-//  const REFIT_ABSTRACT_MENU_ENTRY& abstractMenuItemTimeout = OptionMenu.Entries["Timeout: "];
-//  const REFIT_INPUT_DIALOG& menuItemTimeout = *abstractMenuItemTimeout.getREFIT_INPUT_DIALOG();
+  if ( gSettings.GUITimeOut != gSettings.GUITimeOutFromConfig ||
+       gSettings.DefaultVolume != gSettings.DefaultVolumeFromConfig ||
+       gSettings.SaveDebugLogToDisk != gSettings.SaveDebugLogToDiskFromConfig ) {
 
+    XString8 buf;
 
-  buf += S8Printf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-  buf += S8Printf("<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n");
-  buf += S8Printf("<plist version=\"1.0\">\n");
-  buf += S8Printf("<dict>\n");
-  buf += S8Printf("    <key>Timeout</key>\n");
-  buf += S8Printf("    <integer>%lld</integer>\n", gSettings.GUITimeOut);
-  buf += S8Printf("    <key>DefaultVolume</key>\n");
-  buf += S8Printf("    <string>%ls</string>\n", gSettings.DefaultVolume.wc_str());
-  buf += S8Printf("    <key>debug</key>\n");
-  buf += S8Printf("    <string>%s</string>\n", gSettings.SaveDebugLogToDisk ? "true" : "false");
-  buf += S8Printf("</dict>\n");
+    buf += S8Printf("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+    buf += S8Printf("<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n");
+    buf += S8Printf("<plist version=\"1.0\">\n");
+    buf += S8Printf("<dict>\n");
+    buf += S8Printf("    <key>Timeout</key>\n");
+    buf += S8Printf("    <integer>%lld</integer>\n", gSettings.GUITimeOut);
+    buf += S8Printf("    <key>DefaultVolume</key>\n");
+    buf += S8Printf("    <string>%ls</string>\n", gSettings.DefaultVolume.wc_str());
+    buf += S8Printf("    <key>debug</key>\n");
+    buf += S8Printf("    <string>%s</string>\n", gSettings.SaveDebugLogToDisk ? "true" : "false");
+    buf += S8Printf("</dict>\n");
 
-  egSaveFile(&self.getCloverDir(), L"BLC.plist", buf.data(), buf.length());
+    egSaveFile(&self.getCloverDir(), L"BLC.plist", buf.data(), buf.length());
+  }
 }
 
 
@@ -139,7 +138,7 @@ GetUserSettings (const TagDict* CfgDict)
     const TagStruct* Prop = CfgDict->propertyForKey("Timeout");
     if ( Prop ) {
       if ( Prop->isInt64() ) {
-        gSettings.GUITimeOut = Prop->getInt64()->intValue();
+        gSettings.GUITimeOut = gSettings.GUITimeOutFromConfig = Prop->getInt64()->intValue();
       }else{
         MsgLog("MALFORMED plist. Timeout must be integer");
       }
@@ -149,7 +148,7 @@ GetUserSettings (const TagDict* CfgDict)
     const TagStruct* Prop = CfgDict->propertyForKey("DefaultVolume");
     if ( Prop ) {
       if ( Prop->isString() ) {
-        gSettings.DefaultVolume = Prop->getString()->stringValue();
+        gSettings.DefaultVolume = gSettings.DefaultVolumeFromConfig = Prop->getString()->stringValue();
       }else{
         MsgLog("MALFORMED plist. DefaultVolume must be string");
       }
@@ -160,7 +159,7 @@ GetUserSettings (const TagDict* CfgDict)
     if ( Prop  && !Prop->isTrueOrYes() && !Prop->isFalseOrNn() ) {
       MsgLog("MALFORMED plist. debug must be true or false");
     }
-    gSettings.SaveDebugLogToDisk = IsPropertyNotNullAndTrue(Prop);
+    gSettings.SaveDebugLogToDisk = gSettings.SaveDebugLogToDiskFromConfig = IsPropertyNotNullAndTrue(Prop);
   }
   return Status;
 }

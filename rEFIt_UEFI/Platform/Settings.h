@@ -10,12 +10,14 @@
 
 class SETTINGS_DATA {
 public:
-  XStringW                DefaultVolume;
-  BOOLEAN                 SaveDebugLogToDisk;
-  INTN                    GUITimeOut;
+  XStringW                DefaultVolume = XStringW();;
+  XStringW                DefaultVolumeFromConfig = XStringW();
+  BOOLEAN                 SaveDebugLogToDisk = 0;;
+  BOOLEAN                 SaveDebugLogToDiskFromConfig = 0;
+  INTN                    GUITimeOut = 0;;
+  INTN                    GUITimeOutFromConfig = 0;
 
-  SETTINGS_DATA() : DefaultVolume(), SaveDebugLogToDisk(0), GUITimeOut(0)
-                  {};
+  SETTINGS_DATA() {};
   SETTINGS_DATA(const SETTINGS_DATA& other) = delete; // Can be defined if needed
   const SETTINGS_DATA& operator = ( const SETTINGS_DATA & ) = delete; // Can be defined if needed
 
