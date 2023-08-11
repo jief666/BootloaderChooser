@@ -71,7 +71,7 @@ REFIT_MENU_ITEM_RESET    MenuEntryReset   (L"Restart Computer"_XSW, 1, 0, 'R', A
 REFIT_MENU_ITEM_SHUTDOWN MenuEntryShutdown(L"Exit BootloaderChooser"_XSW,      1, 0, 'U', ActionSelect);
 REFIT_MENU_ITEM_RETURN   MenuEntryReturn  (L"Return"_XSW,           0, 0,  0,  ActionEnter);
 
-REFIT_MENU_SCREEN MainMenu(NULL, 1, SWPrintf("8BootloaderChooser v%s Main Menu", FIRMWARE_REVISION), L"Automatic boot"_XSW);
+REFIT_MENU_SCREEN MainMenu(NULL, 1, SWPrintf("BootloaderChooser v%s Main Menu", FIRMWARE_REVISION), L"Automatic boot"_XSW);
 REFIT_MENU_SCREEN AboutMenu(NULL, 2, L"About"_XSW, L""_XSW);
 REFIT_MENU_SCREEN HelpMenu(NULL, 3, L"Help"_XSW, L""_XSW);
 REFIT_MENU_SCREEN OptionMenu(NULL, 4, L"Options"_XSW, L""_XSW);

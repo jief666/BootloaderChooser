@@ -414,16 +414,18 @@ EFI_STATUS LOADER_ENTRY::StartLoader()
         return EFI_UNSUPPORTED;
       }
     }else{
-      INTN offsetpenCore = FindMem(ImageBuffer.vdata(), ImageBuffer.size(), "OpenCore Bootloader (c) Acidanthera Research", strlen("OpenCore Bootloader (c) Acidanthera Research"));
-      if ( offsetpenCore != -1 ) {
-        // It's an old OpenCore
-        if ( !dirNameEqual(LoaderPath, L"\\EFI\\OC\\"_XSW) ) {
-          MsgLog("This OpenCore version cannot start outside \\EFI\\OC\\\n");
-          return EFI_UNSUPPORTED;
-        }
-      }else{
-        // An other image. Linux, Windows ? Let's try.
-      }
+        // An other image. Linux, Windows, OpenCore ? Let's try.
+
+//      INTN offsetpenCore = FindMem(ImageBuffer.vdata(), ImageBuffer.size(), "OpenCore Bootloader (c) Acidanthera Research", strlen("OpenCore Bootloader (c) Acidanthera Research"));
+//      if ( offsetpenCore != -1 ) {
+//        // It's an old OpenCore
+//        if ( !dirNameEqual(LoaderPath, L"\\EFI\\OC\\"_XSW) ) {
+//          MsgLog("This OpenCore version cannot start outside \\EFI\\OC\\\n");
+//          return EFI_UNSUPPORTED;
+//        }
+//      }else{
+//        // An other image. Linux, Windows ? Let's try.
+//      }
     }
   }
   if ( rebootNeededBeforeNextStartImage ) {
@@ -494,6 +496,8 @@ RefitMain (IN EFI_HANDLE           ImageHandle,
   gRT       = SystemTable->RuntimeServices;
 //  /*Status = */EfiGetSystemConfigurationTable (&gEfiDxeServicesTableGuid, (VOID **) &gDS);
   
+  MemLogInit();
+
   TSCFrequency = GetMemLogTscTicksPerSecond(); //ticks for 1second
 
 #ifdef DEBUG_ON_SERIAL_PORT
