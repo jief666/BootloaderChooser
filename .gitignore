@@ -98,7 +98,6 @@ toolchain/
 # XCode files/directories
 *~.nib
 DerivedData/
-build/
 *.pbxuser
 *.mode1v3
 *.mode2v3
@@ -120,7 +119,6 @@ BaseTools/Source/Python/build/BuildReport.pyc
 
 CloverPackage/revision
 CloverPackage/version
-tools
 
 #VC project
 /VC

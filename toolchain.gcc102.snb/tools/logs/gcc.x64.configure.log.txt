@@ -1,0 +1,150 @@
+checking build system type... x86_64-apple-darwin18.7.0
+checking host system type... x86_64-apple-darwin18.7.0
+checking target system type... x86_64-clover-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking for libatomic support... yes
+checking for libitm support... yes
+checking for libsanitizer support... yes
+checking for libvtv support... yes
+checking for libhsail-rt support... yes
+checking for libphobos support... yes
+checking for x86_64-apple-darwin18.7.0-gcc... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for x86_64-apple-darwin18.7.0-g++... no
+checking for x86_64-apple-darwin18.7.0-c++... no
+checking for x86_64-apple-darwin18.7.0-gpp... no
+checking for x86_64-apple-darwin18.7.0-aCC... no
+checking for x86_64-apple-darwin18.7.0-CC... no
+checking for x86_64-apple-darwin18.7.0-cxx... no
+checking for x86_64-apple-darwin18.7.0-cc++... no
+checking for x86_64-apple-darwin18.7.0-cl.exe... no
+checking for x86_64-apple-darwin18.7.0-FCC... no
+checking for x86_64-apple-darwin18.7.0-KCC... no
+checking for x86_64-apple-darwin18.7.0-RCC... no
+checking for x86_64-apple-darwin18.7.0-xlC_r... no
+checking for x86_64-apple-darwin18.7.0-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ accepts -static-libstdc++ -static-libgcc... no
+checking for x86_64-apple-darwin18.7.0-gnatbind... no
+checking for gnatbind... no
+checking for x86_64-apple-darwin18.7.0-gnatmake... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking for the correct version of gmp.h... yes
+checking for the correct version of mpfr.h... yes
+checking for the correct version of mpc.h... yes
+checking for the correct version of the gmp/mpfr/mpc libraries... yes
+*** This configuration is not supported in the following subdirectories:
+     zlib gnattools gotools target-libada target-libhsail-rt target-libphobos target-zlib target-libbacktrace target-libgfortran target-libgo target-libffi target-libobjc target-liboffloadmic target-libssp
+    (Any other directories should still work fine.)
+ld: warning: directory not found for option '-L/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/sdk/lib'
+checking for default BUILD_CONFIG... 
+checking for --enable-vtable-verify... no
+checking for bison... bison -y
+checking for bison... bison
+checking for gm4... gm4
+checking for flex... flex
+checking for flex... flex
+checking for makeinfo... makeinfo
+checking for expect... expect
+checking for runtest... no
+checking for x86_64-apple-darwin18.7.0-ar... no
+checking for ar... ar
+checking for x86_64-apple-darwin18.7.0-as... no
+checking for as... as
+checking for x86_64-apple-darwin18.7.0-dlltool... no
+checking for dlltool... no
+checking for ld... (cached) ld
+checking for x86_64-apple-darwin18.7.0-ld... (cached) ld
+checking for x86_64-apple-darwin18.7.0-lipo... no
+checking for lipo... lipo
+checking for x86_64-apple-darwin18.7.0-nm... no
+checking for nm... nm
+checking for x86_64-apple-darwin18.7.0-ranlib... no
+checking for ranlib... ranlib
+checking for x86_64-apple-darwin18.7.0-strip... no
+checking for strip... strip
+checking for x86_64-apple-darwin18.7.0-windres... no
+checking for windres... no
+checking for x86_64-apple-darwin18.7.0-windmc... no
+checking for windmc... no
+checking for x86_64-apple-darwin18.7.0-objcopy... no
+checking for objcopy... no
+checking for x86_64-apple-darwin18.7.0-objdump... no
+checking for objdump... objdump
+checking for x86_64-apple-darwin18.7.0-otool... no
+checking for otool... otool
+checking for x86_64-apple-darwin18.7.0-readelf... no
+checking for readelf... no
+checking for x86_64-clover-linux-gnu-cc... no
+checking for x86_64-clover-linux-gnu-gcc... no
+checking for x86_64-clover-linux-gnu-c++... no
+checking for x86_64-clover-linux-gnu-g++... no
+checking for x86_64-clover-linux-gnu-cxx... no
+checking for x86_64-clover-linux-gnu-gxx... no
+checking for x86_64-clover-linux-gnu-gcc... no
+checking for x86_64-clover-linux-gnu-gfortran... no
+checking for x86_64-clover-linux-gnu-gccgo... no
+checking for x86_64-clover-linux-gnu-gdc... no
+checking for ar... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ar
+checking for as... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/as
+checking for dlltool... no
+checking for x86_64-clover-linux-gnu-dlltool... no
+checking for ld... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld
+checking for lipo... no
+checking for x86_64-clover-linux-gnu-lipo... no
+checking for nm... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/nm
+checking for objcopy... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/objcopy
+checking for objdump... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/objdump
+checking for otool... no
+checking for x86_64-clover-linux-gnu-otool... no
+checking for ranlib... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ranlib
+checking for readelf... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/readelf
+checking for strip... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/strip
+checking for windres... no
+checking for x86_64-clover-linux-gnu-windres... no
+checking for windmc... no
+checking for x86_64-clover-linux-gnu-windmc... no
+checking where to find the target ar... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target as... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target cc... just compiled
+checking where to find the target c++... just compiled
+checking where to find the target c++ for libstdc++... just compiled
+checking where to find the target dlltool... pre-installed
+checking where to find the target gcc... just compiled
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target gdc... pre-installed
+checking where to find the target ld... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target objcopy... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target objdump... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target otool... pre-installed
+checking where to find the target ranlib... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target readelf... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target strip... pre-installed in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+checking where to find the target windres... pre-installed
+checking where to find the target windmc... pre-installed
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile

@@ -1,0 +1,511 @@
+checking build system type... sandybridge-apple-darwin18.7.0
+checking host system type... sandybridge-apple-darwin18.7.0
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking ABI=64
+checking compiler gcc -O2 -pedantic -fomit-frame-pointer -m64 ... yes
+checking compiler gcc -O2 -pedantic -fomit-frame-pointer -m64  -mtune=sandybridge... yes
+checking compiler gcc -O2 -pedantic -fomit-frame-pointer -m64 -mtune=sandybridge  -march=sandybridge... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for gcc option to accept ISO C99... none needed
+checking how to run the C preprocessor... gcc -E
+checking build system compiler gcc... yes
+checking for build system preprocessor... gcc -E
+checking for build system executable suffix... 
+checking whether build system compiler is ANSI... yes
+checking for build system compiler math library... -lm
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+using ABI="64"
+      CC="gcc"
+      CFLAGS="-O2 -pedantic -fomit-frame-pointer -m64 -mtune=sandybridge -march=sandybridge"
+      CPPFLAGS=""
+      MPN_PATH=" x86_64/coreisbr x86_64/coreinhm x86_64/core2 x86_64 generic"
+checking whether assembler supports --noexecstack option... no
+checking for ar... ar
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... no
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert sandybridge-apple-darwin18.7.0 file names to sandybridge-apple-darwin18.7.0 format... func_convert_file_noop
+checking how to convert sandybridge-apple-darwin18.7.0 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin18.7.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking invent.h usability... no
+checking invent.h presence... no
+checking for invent.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking nl_types.h usability... yes
+checking nl_types.h presence... yes
+checking for nl_types.h... yes
+checking sys/attributes.h usability... no
+checking sys/attributes.h presence... no
+checking for sys/attributes.h... no
+checking sys/iograph.h usability... no
+checking sys/iograph.h presence... no
+checking for sys/iograph.h... no
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/processor.h usability... no
+checking sys/processor.h presence... no
+checking for sys/processor.h... no
+checking sys/pstat.h usability... no
+checking sys/pstat.h presence... no
+checking for sys/pstat.h... no
+checking sys/sysinfo.h usability... no
+checking sys/sysinfo.h presence... no
+checking for sys/sysinfo.h... no
+checking sys/syssgi.h usability... no
+checking sys/syssgi.h presence... no
+checking for sys/syssgi.h... no
+checking sys/systemcfg.h usability... no
+checking sys/systemcfg.h presence... no
+checking for sys/systemcfg.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/resource.h... yes
+checking for sys/sysctl.h... yes
+checking for machine/hal_sysinfo.h... no
+checking whether fgetc is declared... yes
+checking whether fscanf is declared... yes
+checking whether optarg is declared... yes
+checking whether ungetc is declared... yes
+checking whether vfprintf is declared... yes
+checking whether sys_errlist is declared... yes
+checking whether sys_nerr is declared... yes
+checking return type of signal handlers... void
+checking for intmax_t... yes
+checking for long double... yes
+checking for long long... yes
+checking for ptrdiff_t... yes
+checking for quad_t... yes
+checking for uint_least32_t... yes
+checking for intptr_t... yes
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict
+checking whether gcc __attribute__ ((const)) works... yes
+checking whether gcc __attribute__ ((malloc)) works... yes
+checking whether gcc __attribute__ ((mode (XX))) works... yes
+checking whether gcc __attribute__ ((noreturn)) works... yes
+checking whether gcc hidden aliases work... no
+checking for inline... inline
+checking for working alloca.h... yes
+checking for alloca (via gmp-impl.h)... yes
+checking how to allocate temporary memory... alloca
+checking whether byte ordering is bigendian... no
+checking format of `double' floating point... IEEE little endian
+checking for alarm... yes
+checking for attr_get... no
+checking for clock... yes
+checking for cputime... no
+checking for getpagesize... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for getsysinfo... no
+checking for localeconv... yes
+checking for memset... yes
+checking for mmap... yes
+checking for mprotect... yes
+checking for nl_langinfo... yes
+checking for obstack_vprintf... no
+checking for popen... yes
+checking for processor_info... yes
+checking for pstat_getprocessor... no
+checking for raise... yes
+checking for read_real_time... no
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for sigstack... no
+checking for syssgi... no
+checking for strchr... yes
+checking for strerror... yes
+checking for strnlen... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for sysconf... yes
+checking for sysctl... yes
+checking for sysctlbyname... yes
+checking for times... yes
+checking for library containing clock_gettime... none required
+checking for vsnprintf... yes
+checking whether vsnprintf works... yes
+checking whether sscanf needs writable input... no
+checking for struct pst_processor.psp_iticksperclktick... no
+checking for suitable m4... m4
+checking if m4wrap produces spurious output... no
+checking how to switch to text section... .text
+checking how to switch to data section... .data
+checking for assembler label suffix... :
+checking for assembler global directive... .globl
+checking for assembler global directive attribute... 
+checking if globals are prefixed by underscore... yes
+checking how to switch to read-only data section... 	.section	__TEXT,__const
+checking for assembler .type directive... 
+checking for assembler .size directive... 
+checking for assembler local label prefix... L
+checking for assembler byte directive... .byte
+checking how to define a 32-bit word... .long
+checking if .align assembly directive is logarithmic... yes
+checking if the .align directive accepts an 0x90 fill in .text... yes
+checking size of void *... 8
+checking size of unsigned short... 2
+checking size of unsigned... 4
+checking size of unsigned long... 8
+checking size of mp_limb_t... 8
+checking for stack_t... yes
+checking for tputs in -lncurses... yes
+checking for readline in -lreadline... yes
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking readline detected... yes
+checking for bison... bison -y
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -ll
+checking whether yytext is a pointer... yes
+creating config.m4
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating demos/pexpr-config.h
+config.status: creating demos/calc/calc-config.h
+config.status: creating Makefile
+config.status: creating mpf/Makefile
+config.status: creating mpn/Makefile
+config.status: creating mpq/Makefile
+config.status: creating mpz/Makefile
+config.status: creating printf/Makefile
+config.status: creating scanf/Makefile
+config.status: creating rand/Makefile
+config.status: creating cxx/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/devel/Makefile
+config.status: creating tests/mpf/Makefile
+config.status: creating tests/mpn/Makefile
+config.status: creating tests/mpq/Makefile
+config.status: creating tests/mpz/Makefile
+config.status: creating tests/rand/Makefile
+config.status: creating tests/misc/Makefile
+config.status: creating tests/cxx/Makefile
+config.status: creating doc/Makefile
+config.status: creating tune/Makefile
+config.status: creating demos/Makefile
+config.status: creating demos/calc/Makefile
+config.status: creating demos/expr/Makefile
+config.status: creating gmp.h
+config.status: creating gmp.pc
+config.status: creating gmpxx.pc
+config.status: creating config.h
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/invert_limb_table.asm to mpn/invert_limb_table.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/add.c to mpn/add.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/add_1.c to mpn/add_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aors_n.asm to mpn/add_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sub.c to mpn/sub.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sub_1.c to mpn/sub_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aors_n.asm to mpn/sub_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/cnd_add_n.asm to mpn/cnd_add_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/cnd_sub_n.asm to mpn/cnd_sub_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/cnd_swap.c to mpn/cnd_swap.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/neg.c to mpn/neg.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/com.asm to mpn/com.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/mul_1.asm to mpn/mul_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorsmul_1.asm to mpn/addmul_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorsmul_1.asm to mpn/submul_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/aors_err1_n.asm to mpn/add_err1_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/aors_err2_n.asm to mpn/add_err2_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/aors_err3_n.asm to mpn/add_err3_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/aors_err1_n.asm to mpn/sub_err1_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/aors_err2_n.asm to mpn/sub_err2_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/aors_err3_n.asm to mpn/sub_err3_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/lshift.asm to mpn/lshift.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/rshift.asm to mpn/rshift.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/dive_1.asm to mpn/dive_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/diveby3.c to mpn/diveby3.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/divis.c to mpn/divis.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/divrem.c to mpn/divrem.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/divrem_1.asm to mpn/divrem_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/divrem_2.asm to mpn/divrem_2.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/fib2_ui.c to mpn/fib2_ui.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/fib2m.c to mpn/fib2m.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mod_1.c to mpn/mod_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/mod_34lsub1.asm to mpn/mod_34lsub1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/mode1o.asm to mpn/mode1o.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/pre_mod_1.c to mpn/pre_mod_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dump.c to mpn/dump.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/mod_1_1.asm to mpn/mod_1_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/mod_1_2.asm to mpn/mod_1_2.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mod_1_3.c to mpn/mod_1_3.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/mod_1_4.asm to mpn/mod_1_4.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/lshiftc.asm to mpn/lshiftc.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mul.c to mpn/mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mul_fft.c to mpn/mul_fft.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mul_n.c to mpn/mul_n.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sqr.c to mpn/sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/mul_basecase.asm to mpn/mul_basecase.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/sqr_basecase.asm to mpn/sqr_basecase.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/nussbaumer_mul.c to mpn/nussbaumer_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mulmid_basecase.c to mpn/mulmid_basecase.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom42_mulmid.c to mpn/toom42_mulmid.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mulmid_n.c to mpn/mulmid_n.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mulmid.c to mpn/mulmid.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/random.c to mpn/random.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/random2.c to mpn/random2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/pow_1.c to mpn/pow_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/rootrem.c to mpn/rootrem.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sqrtrem.c to mpn/sqrtrem.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sizeinbase.c to mpn/sizeinbase.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/get_str.c to mpn/get_str.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/set_str.c to mpn/set_str.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/compute_powtab.c to mpn/compute_powtab.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/scan0.c to mpn/scan0.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/scan1.c to mpn/scan1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreinhm/popcount.asm to mpn/popcount.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreinhm/hamdist.asm to mpn/hamdist.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/cmp.c to mpn/cmp.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/zero_p.c to mpn/zero_p.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/perfsqr.c to mpn/perfsqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/perfpow.c to mpn/perfpow.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/strongfibo.c to mpn/strongfibo.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/gcd_11.asm to mpn/gcd_11.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/gcd_22.asm to mpn/gcd_22.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcd_1.c to mpn/gcd_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcd.c to mpn/gcd.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcdext_1.c to mpn/gcdext_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcdext.c to mpn/gcdext.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcd_subdiv_step.c to mpn/gcd_subdiv_step.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/gcdext_lehmer.c to mpn/gcdext_lehmer.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/div_q.c to mpn/div_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/tdiv_qr.c to mpn/tdiv_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/jacbase.c to mpn/jacbase.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/jacobi_2.c to mpn/jacobi_2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/jacobi.c to mpn/jacobi.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/get_d.c to mpn/get_d.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/matrix22_mul.c to mpn/matrix22_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/matrix22_mul1_inverse_vector.c to mpn/matrix22_mul1_inverse_vector.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd_matrix.c to mpn/hgcd_matrix.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd2.c to mpn/hgcd2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd_step.c to mpn/hgcd_step.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd_reduce.c to mpn/hgcd_reduce.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd.c to mpn/hgcd.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd_appr.c to mpn/hgcd_appr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd2_jacobi.c to mpn/hgcd2_jacobi.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/hgcd_jacobi.c to mpn/hgcd_jacobi.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mullo_n.c to mpn/mullo_n.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/mullo_basecase.asm to mpn/mullo_basecase.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sqrlo.c to mpn/sqrlo.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sqrlo_basecase.c to mpn/sqrlo_basecase.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom22_mul.c to mpn/toom22_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom32_mul.c to mpn/toom32_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom42_mul.c to mpn/toom42_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom52_mul.c to mpn/toom52_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom62_mul.c to mpn/toom62_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom33_mul.c to mpn/toom33_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom43_mul.c to mpn/toom43_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom53_mul.c to mpn/toom53_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom54_mul.c to mpn/toom54_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom63_mul.c to mpn/toom63_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom44_mul.c to mpn/toom44_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom6h_mul.c to mpn/toom6h_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom6_sqr.c to mpn/toom6_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom8h_mul.c to mpn/toom8h_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom8_sqr.c to mpn/toom8_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_couple_handling.c to mpn/toom_couple_handling.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom2_sqr.c to mpn/toom2_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom3_sqr.c to mpn/toom3_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom4_sqr.c to mpn/toom4_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_dgr3_pm1.c to mpn/toom_eval_dgr3_pm1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_dgr3_pm2.c to mpn/toom_eval_dgr3_pm2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_pm1.c to mpn/toom_eval_pm1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_pm2.c to mpn/toom_eval_pm2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_pm2exp.c to mpn/toom_eval_pm2exp.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_eval_pm2rexp.c to mpn/toom_eval_pm2rexp.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_5pts.c to mpn/toom_interpolate_5pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_6pts.c to mpn/toom_interpolate_6pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_7pts.c to mpn/toom_interpolate_7pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_8pts.c to mpn/toom_interpolate_8pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_12pts.c to mpn/toom_interpolate_12pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/toom_interpolate_16pts.c to mpn/toom_interpolate_16pts.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/invertappr.c to mpn/invertappr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/invert.c to mpn/invert.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/binvert.c to mpn/binvert.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mulmod_bnm1.c to mpn/mulmod_bnm1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sqrmod_bnm1.c to mpn/sqrmod_bnm1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/div_qr_1.c to mpn/div_qr_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/div_qr_1n_pi1.asm to mpn/div_qr_1n_pi1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/div_qr_2.c to mpn/div_qr_2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/div_qr_2n_pi1.asm to mpn/div_qr_2n_pi1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/div_qr_2u_pi1.asm to mpn/div_qr_2u_pi1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_div_q.c to mpn/sbpi1_div_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_div_qr.c to mpn/sbpi1_div_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_divappr_q.c to mpn/sbpi1_divappr_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dcpi1_div_q.c to mpn/dcpi1_div_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dcpi1_div_qr.c to mpn/dcpi1_div_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dcpi1_divappr_q.c to mpn/dcpi1_divappr_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mu_div_qr.c to mpn/mu_div_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mu_divappr_q.c to mpn/mu_divappr_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mu_div_q.c to mpn/mu_div_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/bdiv_q_1.asm to mpn/bdiv_q_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_bdiv_q.c to mpn/sbpi1_bdiv_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_bdiv_qr.c to mpn/sbpi1_bdiv_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sbpi1_bdiv_r.c to mpn/sbpi1_bdiv_r.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dcpi1_bdiv_q.c to mpn/dcpi1_bdiv_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/dcpi1_bdiv_qr.c to mpn/dcpi1_bdiv_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mu_bdiv_q.c to mpn/mu_bdiv_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/mu_bdiv_qr.c to mpn/mu_bdiv_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/bdiv_q.c to mpn/bdiv_q.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/bdiv_qr.c to mpn/bdiv_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/broot.c to mpn/broot.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/brootinv.c to mpn/brootinv.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/bsqrt.c to mpn/bsqrt.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/bsqrtinv.c to mpn/bsqrtinv.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/divexact.c to mpn/divexact.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/bdiv_dbm1c.asm to mpn/bdiv_dbm1c.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/redc_1.asm to mpn/redc_1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/redc_2.c to mpn/redc_2.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/redc_n.c to mpn/redc_n.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/powm.c to mpn/powm.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/powlo.c to mpn/powlo.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_powm.c to mpn/sec_powm.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_mul.c to mpn/sec_mul.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_sqr.c to mpn/sec_sqr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_div.c to mpn/sec_div_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_div.c to mpn/sec_div_r.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_qr.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_r.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_aors_1.c to mpn/sec_add_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_aors_1.c to mpn/sec_sub_1.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/sec_invert.c to mpn/sec_invert.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/trialdiv.c to mpn/trialdiv.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/remove.c to mpn/remove.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/and_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/andn_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/nand_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/ior_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/iorn_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/nior_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/xor_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/logops_n.asm to mpn/xnor_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/copyi.asm to mpn/copyi.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/copyd.asm to mpn/copyd.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/zero.c to mpn/zero.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/sec_tabselect.asm to mpn/sec_tabselect.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/comb_tables.c to mpn/comb_tables.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/invert_limb.asm to mpn/invert_limb.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/sqr_diag_addlsh1.asm to mpn/sqr_diag_addlsh1.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/mul_2.asm to mpn/mul_2.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/addmul_2.asm to mpn/addmul_2.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh1_n.asm to mpn/addlsh1_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/sublsh1_n.asm to mpn/sublsh1_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh1_n.asm to mpn/rsblsh1_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/rsh1aors_n.asm to mpn/rsh1add_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/rsh1aors_n.asm to mpn/rsh1sub_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh2_n.asm to mpn/addlsh2_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/core2/sublsh2_n.asm to mpn/sublsh2_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh2_n.asm to mpn/rsblsh2_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh_n.asm to mpn/addlsh_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/aorrlsh_n.asm to mpn/rsblsh_n.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/generic/add_n_sub_n.c to mpn/add_n_sub_n.c
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/addaddmul_1msb0.asm to mpn/addaddmul_1msb0.asm
+config.status: linking /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpn/x86_64/coreisbr/gmp-mparam.h to gmp-mparam.h
+config.status: executing libtool commands
+configure: summary of build options:
+
+  Version:           GNU MP 6.2.0
+  Host type:         sandybridge-apple-darwin18.7.0
+  ABI:               64
+  Install prefix:    /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain
+  Compiler:          gcc
+  Static libraries:  yes
+  Shared libraries:  yes
+

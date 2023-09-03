@@ -1,0 +1,230 @@
+make install-strip
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross
+make[1]: Nothing to be done for `install-strip-target'.
+mkdir /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross
+make[2]: Nothing to be done for `install-strip'.
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+make[2]: Nothing to be done for `install-strip'.
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+make[3]: Nothing to be done for `all'.
+make[3]: Nothing to be done for `install'.
+if test -n ""; then \
+		/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/lib/`gcc -g -O2 -print-multi-os-directory`; \
+		/usr/bin/install -c -m 644 ./libiberty.a /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.an; \
+		( cd /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/lib/`gcc -g -O2 -print-multi-os-directory` ; chmod 644 ./libiberty.an ;ranlib ./libiberty.an ); \
+		mv -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.an /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/lib/`gcc -g -O2 -print-multi-os-directory`/./libiberty.a; \
+		case "" in \
+		  /*)    thd=;; \
+		  *)     thd=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/include/;; \
+		esac; \
+		/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../mkinstalldirs ${thd}; \
+		for h in /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/ansidecl.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/demangle.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/dyn-string.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/fibheap.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/floatformat.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/hashtab.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/libiberty.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/objalloc.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/partition.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/safe-ctype.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/sort.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/splay-tree.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/../include/timeval-utils.h; do \
+		  /usr/bin/install -c -m 644 $h ${thd}; \
+		done; \
+	fi
+make  install-recursive
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+Making install in po
+make[5]: Nothing to be done for `install'.
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+Making install in doc
+make[5]: Nothing to be done for `install-exec-am'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gprof/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gprof/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gprof/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/doc/as.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-as.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gprof/gprof.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-gprof.1'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/doc/as.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gprof/gprof.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info/as.info'
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s gprof '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-gprof'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info/gprof.info'
+Making install in po
+make  install-recursive
+make[4]: Nothing to be done for `install'.
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s gprof /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-gprof
+make  install-recursive
+Making install in doc
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/bfd/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/bfd/doc/bfd.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info/bfd.info'
+Making install in po
+Making install in po
+make[5]: Nothing to be done for `install'.
+make[5]: Nothing to be done for `install'.
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin
+make[5]: Nothing to be done for `install-data-am'.
+ STRIPPROG='strip' /bin/sh ./libtool  --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s as-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-as
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s as-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-as
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/gas/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+mkdir /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu
+mkdir /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+n=`echo as | sed 's&^&x86_64-clover-linux-gnu-&'`; \
+	if [ "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$n" != "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/as" ]; then \
+	  rm -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/as; \
+	  ln /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$n /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/as >/dev/null 2>/dev/null \
+	    || STRIPPROG='strip' /bin/sh ./libtool --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s as-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/as; \
+	else \
+	  true ; \
+	fi
+make[6]: Nothing to be done for `install-exec-am'.
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/lib/ldscripts
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin'
+mkdir /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/lib
+mkdir /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/lib/ldscripts
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ld-new '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ld.bfd'
+for f in ldscripts/* ; do \
+	  /usr/bin/install -c -m 644 $f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/lib/$f ; \
+	done
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ld-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ld.bfd
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/ld.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+Making install in .
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/ld.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-ld.1'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info/ld.info'
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/ld/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+n=`echo ld.bfd | sed 's/^ld-new$/ld.bfd/;s&^&x86_64-clover-linux-gnu-&'`; \
+	if test "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin" != "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin"; then \
+	  rm -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld.bfd; \
+	  ln /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$n /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld.bfd >/dev/null 2>/dev/null \
+	  || STRIPPROG='strip' /bin/sh ./libtool --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ld-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld.bfd; \
+	fi; \
+	if test "xyes" = "xyes"; then \
+	  ld=`echo ld | sed 's/^ld-new$/ld.bfd/;s&^&x86_64-clover-linux-gnu-&'`; \
+	  rm -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$ld; \
+	  ln /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$n /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$ld >/dev/null 2>/dev/null \
+	  || STRIPPROG='strip' /bin/sh ./libtool --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ld-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$ld; \
+	  if test "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin" != "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin"; then \
+	    rm -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld; \
+	    ln /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$n /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld >/dev/null 2>/dev/null \
+	    || STRIPPROG='strip' /bin/sh ./libtool --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ld-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/ld; \
+	  fi; \
+	fi
+make[5]: Nothing to be done for `install-exec-am'.
+Making install in po
+make[4]: Nothing to be done for `install'.
+if test -z 'strip'; then \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	      install; \
+	else \
+	  make  INSTALL_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" \
+	    install_sh_PROGRAM="/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s" INSTALL_STRIP_FLAG=-s \
+	    "INSTALL_PROGRAM_ENV=STRIPPROG='strip'" install; \
+	fi
+make  install-recursive
+Making install in doc
+make[6]: Nothing to be done for `install-exec-am'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/binutils.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/addr2line.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-addr2line.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/ar.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-ar.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/dlltool.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-dlltool.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/nm.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-nm.1'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/info/binutils.info'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/objcopy.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-objcopy.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/objdump.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-objdump.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/ranlib.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-ranlib.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/readelf.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-readelf.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/size.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-size.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/strings.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-strings.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/strip.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-strip.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/elfedit.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-elfedit.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/windres.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-windres.1'
+ /usr/bin/install -c -m 644 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/doc/windmc.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-windmc.1'
+ /usr/bin/install -c -m 644 'c++filt.1' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/share/man/man1/x86_64-clover-linux-gnu-c++filt.1'
+Making install in po
+make[5]: Nothing to be done for `install'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/../install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin'
+make[6]: Nothing to be done for `install-data-am'.
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s size '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-size'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s size /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-size
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s objdump '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-objdump'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s objdump /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-objdump
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ar '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ar'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ar /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ar
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s strings '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-strings'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s strings /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-strings
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ranlib '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ranlib'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s ranlib /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-ranlib
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s objcopy '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-objcopy'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s objcopy /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-objcopy
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s addr2line '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-addr2line'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s addr2line /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-addr2line
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s readelf '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-readelf'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s readelf /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-readelf
+ STRIPPROG='strip' /bin/sh ./libtool   --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s elfedit '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-elfedit'
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s elfedit /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/./x86_64-clover-linux-gnu-elfedit
+ STRIPPROG='strip' /bin/sh ./libtool  --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s nm-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-nm
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s nm-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-nm
+ STRIPPROG='strip' /bin/sh ./libtool  --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s strip-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-strip
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s strip-new /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-strip
+ STRIPPROG='strip' /bin/sh ./libtool  --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s cxxfilt /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-c++filt
+libtool: install: /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s cxxfilt /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/x86_64-clover-linux-gnu-c++filt
+/bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/binutils/../mkinstalldirs /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin
+for i in nm-new strip-new ar ranlib dlltool objdump objcopy readelf; do \
+	  if [ -f $i ]; then \
+	    j=`echo $i | sed -e 's/-new//'`; \
+	    k=`echo $j | sed 's&^&x86_64-clover-linux-gnu-&'`; \
+	    if [ "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$k" != "/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/$j" ]; then \
+	      rm -f /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/$j; \
+	      ln /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/bin/$k /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/$j >/dev/null 2>/dev/null \
+		|| STRIPPROG='strip' /bin/sh ./libtool --mode=install /bin/sh /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/install-sh -c -s $i /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross/x86_64-clover-linux-gnu/bin/$j; \
+	    fi; \
+	  else true; \
+	  fi; \
+	done

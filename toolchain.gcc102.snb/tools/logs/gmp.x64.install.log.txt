@@ -1,0 +1,98 @@
+make  install-recursive
+Making install in tests
+Making install in .
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in devel
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in mpn
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in mpz
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in mpq
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in mpf
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in rand
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in misc
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in cxx
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in mpn
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in mpz
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in mpq
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in mpf
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in printf
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in scanf
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in rand
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in cxx
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in demos
+Making install in calc
+make  install-am
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in expr
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tune
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in doc
+make[3]: Nothing to be done for `install-exec-am'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/doc/gmp.info /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/doc/gmp.info-1 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/doc/gmp.info-2 '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info/gmp.info'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/include'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/pkgconfig'
+ /usr/bin/install -c -m 644 gmp.h '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/include'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libgmp.la '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib'
+ /usr/bin/install -c -m 644 gmp.pc '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/pkgconfig'
+make  install-data-hook
+
++-------------------------------------------------------------+
+| CAUTION:                                                    |
+libtool: install: /usr/bin/install -c .libs/libgmp.10.dylib /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libgmp.10.dylib
+|                                                             |
+libtool: install: (cd /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib && { ln -s -f libgmp.10.dylib libgmp.dylib || { rm -f libgmp.dylib && ln -s libgmp.10.dylib libgmp.dylib; }; })
+| If you have not already run "make check", then we strongly  |
+| recommend you do so.                                        |
+libtool: install: /usr/bin/install -c .libs/libgmp.lai /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libgmp.la
+|                                                             |
+libtool: install: /usr/bin/install -c .libs/libgmp.a /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libgmp.a
+| GMP has been carefully tested by its authors, but compilers |
+| are all too often released with serious bugs.  GMP tends to |
+libtool: install: chmod 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libgmp.a
+| explore interesting corners in compilers and has hit bugs   |
+libtool: install: ranlib /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libgmp.a
+| on quite a few occasions.                                   |
+|                                                             |
++-------------------------------------------------------------+
+

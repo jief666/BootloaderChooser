@@ -1,0 +1,30 @@
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/src/vasprintf.c:1920:3: warning: result of comparison of constant 9223372036854775807 with expression of type 'int' is always false [-Wtautological-constant-out-of-range-compare]
+  INCR_TOTAL (np->ip_trailing_digits);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/src/vasprintf.c:1910:28: note: expanded from macro 'INCR_TOTAL'
+    if (MPFR_UNLIKELY ((v) > MPFR_INTMAX_MAX))          \
+        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/src/mpfr-impl.h:1485:48: note: expanded from macro 'MPFR_UNLIKELY'
+# define MPFR_UNLIKELY(x) (__builtin_expect(!!(x), 0))
+                                               ^
+1 warning generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(volatile.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(mp_clz_tab.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(logging.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_d64.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_d64.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_float128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_float128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(mpfr-mini-gmp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_d128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_d128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(volatile.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(mp_clz_tab.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(logging.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_d64.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_d64.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_float128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_float128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(mpfr-mini-gmp.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(set_d128.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libmpfr.a(get_d128.o) has no symbols

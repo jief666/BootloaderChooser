@@ -1,0 +1,182 @@
+make
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+configure: WARNING: debuginfod is missing or unusable; some features may be unavailable.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning1 warning generated.
+ generated.
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/xmalloc.c:113:28: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    first_break = (char *) sbrk (0);
+                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/cdefs.h:176:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/xmalloc.c:124:26: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    allocated = (char *) sbrk (0) - first_break;
+                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/cdefs.h:176:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/libiberty/xmalloc.c:126:26: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+    allocated = (char *) sbrk (0) - (char *) &environ;
+                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/sys/cdefs.h:176:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+4 warnings generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+1 warning generated.
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+warning: unknown warning option '-Wshadow=local' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries

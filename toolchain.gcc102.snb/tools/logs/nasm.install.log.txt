@@ -1,0 +1,8 @@
+strip nasm ndisasm && make install
+make: Circular asm/warnings.c <- asm/warnings.time dependency dropped.
+autoconf/helpers/install-sh -c -d /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/bin
+/usr/bin/install -c nasm /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/bin/nasm
+/usr/bin/install -c ndisasm /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/bin/ndisasm
+autoconf/helpers/install-sh -c -d /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/man/man1
+/usr/bin/install -c -m 644 ./nasm.1 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/man/man1/nasm.1
+/usr/bin/install -c -m 644 ./ndisasm.1 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/man/man1/ndisasm.1

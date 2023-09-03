@@ -1,0 +1,1 @@
+install -c -s -m 555 efitools/mtoc.NEW /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/bin/mtoc.NEW_jief

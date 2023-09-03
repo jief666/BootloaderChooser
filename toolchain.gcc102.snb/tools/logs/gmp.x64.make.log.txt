@@ -1,0 +1,42 @@
+toom_interpolate_5pts.c:70:19: warning: expression result unused [-Wunused-value]
+  ASSERT_NOCARRY (mpn_divexact_by3 (v2, v2, kk1));    /* v2 <- v2 / 3 */
+  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/gmp-impl.h:1662:6: note: expanded from macro 'mpn_divexact_by3'
+  (3 & mpn_bdiv_dbm1 (dst, src, size, __GMP_CAST (mp_limb_t, GMP_NUMB_MASK / 3)))
+   ~ ^
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/gmp-impl.h:2459:33: note: expanded from macro 'ASSERT_NOCARRY'
+#define ASSERT_NOCARRY(expr)   (expr)
+                                ^~~~
+1 warning generated.
+toom_interpolate_8pts.c:163:18: warning: expression result unused [-Wunused-value]
+  ASSERT_NOCARRY(mpn_divexact_by3 (r5, r5, 3 * n + 1));
+  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/gmp-impl.h:1662:6: note: expanded from macro 'mpn_divexact_by3'
+  (3 & mpn_bdiv_dbm1 (dst, src, size, __GMP_CAST (mp_limb_t, GMP_NUMB_MASK / 3)))
+   ~ ^
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/gmp-impl.h:2459:33: note: expanded from macro 'ASSERT_NOCARRY'
+#define ASSERT_NOCARRY(expr)   (expr)
+                                ^~~~
+1 warning generated.
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/gmp-6.2.0/mpz/mul.c:112:2: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+        else
+        ^
+1 warning generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obvprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obprntffuns.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(repl-vsnprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obvprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(obprntffuns.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libprintf.a(repl-vsnprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(mp_clz_tab.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obvprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obprntffuns.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(repl-vsnprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(mp_clz_tab.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obvprintf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(obprntffuns.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgmp.a(repl-vsnprintf.o) has no symbols

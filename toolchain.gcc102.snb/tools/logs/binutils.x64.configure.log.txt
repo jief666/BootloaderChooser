@@ -1,0 +1,134 @@
+LDFLAGS="-dead_strip" /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/binutils-2.35/configure --host=x86_64-apple-darwin18.7.0 --enable-plugins --build=x86_64-apple-darwin18.7.0 --target=x86_64-clover-linux-gnu --prefix=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/cross --with-included-gettext --disable-werror --with-gmp=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain --with-mpfr=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain --with-mpc=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain --with-isl=/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain --disable-isl-version-check --disable-nls --enable-deterministic-archives --with-mmap --with-system-zlib
+checking build system type... x86_64-apple-darwin18.7.0
+checking host system type... x86_64-apple-darwin18.7.0
+checking target system type... x86_64-clover-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking for x86_64-apple-darwin18.7.0-gcc... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for x86_64-apple-darwin18.7.0-g++... no
+checking for x86_64-apple-darwin18.7.0-c++... no
+checking for x86_64-apple-darwin18.7.0-gpp... no
+checking for x86_64-apple-darwin18.7.0-aCC... no
+checking for x86_64-apple-darwin18.7.0-CC... no
+checking for x86_64-apple-darwin18.7.0-cxx... no
+checking for x86_64-apple-darwin18.7.0-cc++... no
+checking for x86_64-apple-darwin18.7.0-cl.exe... no
+checking for x86_64-apple-darwin18.7.0-FCC... no
+checking for x86_64-apple-darwin18.7.0-KCC... no
+checking for x86_64-apple-darwin18.7.0-RCC... no
+checking for x86_64-apple-darwin18.7.0-xlC_r... no
+checking for x86_64-apple-darwin18.7.0-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether g++ accepts -static-libstdc++ -static-libgcc... no
+checking for x86_64-apple-darwin18.7.0-gnatbind... no
+checking for gnatbind... no
+checking for x86_64-apple-darwin18.7.0-gnatmake... no
+checking for gnatmake... no
+checking whether compiler driver understands Ada... no
+checking how to compare bootstrapped objects... cmp --ignore-initial=16 $$f1 $$f2
+checking for objdir... .libs
+checking whether to use debuginfod... auto
+checking for debuginfod_begin in -ldebuginfod... no
+checking whether debuginfod_begin is declared... no
+configure: WARNING: debuginfod is missing or unusable; some features may be unavailable.
+*** This configuration is not supported in the following subdirectories:
+     zlib
+    (Any other directories should still work fine.)
+rm: conftest.dSYM: is a directory
+checking for default BUILD_CONFIG... 
+checking for --enable-vtable-verify... no
+checking for bison... bison -y
+checking for bison... bison
+checking for gm4... gm4
+checking for flex... flex
+checking for flex... flex
+checking for makeinfo... makeinfo
+checking for expect... expect
+checking for runtest... no
+checking for x86_64-apple-darwin18.7.0-ar... no
+checking for ar... ar
+checking for x86_64-apple-darwin18.7.0-as... no
+checking for as... as
+checking for x86_64-apple-darwin18.7.0-dlltool... no
+checking for dlltool... no
+checking for ld... (cached) ld
+checking for x86_64-apple-darwin18.7.0-ld... (cached) ld
+checking for x86_64-apple-darwin18.7.0-lipo... no
+checking for lipo... lipo
+checking for x86_64-apple-darwin18.7.0-nm... no
+checking for nm... nm
+checking for x86_64-apple-darwin18.7.0-ranlib... no
+checking for ranlib... ranlib
+checking for x86_64-apple-darwin18.7.0-strip... no
+checking for strip... strip
+checking for x86_64-apple-darwin18.7.0-windres... no
+checking for windres... no
+checking for x86_64-apple-darwin18.7.0-windmc... no
+checking for windmc... no
+checking for x86_64-apple-darwin18.7.0-objcopy... no
+checking for objcopy... no
+checking for x86_64-apple-darwin18.7.0-objdump... no
+checking for objdump... objdump
+checking for x86_64-apple-darwin18.7.0-readelf... no
+checking for readelf... no
+checking for x86_64-clover-linux-gnu-cc... no
+checking for x86_64-clover-linux-gnu-gcc... no
+checking for x86_64-clover-linux-gnu-c++... no
+checking for x86_64-clover-linux-gnu-g++... no
+checking for x86_64-clover-linux-gnu-cxx... no
+checking for x86_64-clover-linux-gnu-gxx... no
+checking for x86_64-clover-linux-gnu-gcc... no
+checking for x86_64-clover-linux-gnu-gfortran... no
+checking for x86_64-clover-linux-gnu-gccgo... no
+checking for x86_64-clover-linux-gnu-ar... no
+checking for x86_64-clover-linux-gnu-as... no
+checking for x86_64-clover-linux-gnu-dlltool... no
+checking for x86_64-clover-linux-gnu-ld... no
+checking for x86_64-clover-linux-gnu-lipo... no
+checking for x86_64-clover-linux-gnu-nm... no
+checking for x86_64-clover-linux-gnu-objcopy... no
+checking for x86_64-clover-linux-gnu-objdump... no
+checking for x86_64-clover-linux-gnu-ranlib... no
+checking for x86_64-clover-linux-gnu-readelf... no
+checking for x86_64-clover-linux-gnu-strip... no
+checking for x86_64-clover-linux-gnu-windres... no
+checking for x86_64-clover-linux-gnu-windmc... no
+checking where to find the target ar... just compiled
+checking where to find the target as... just compiled
+checking where to find the target cc... pre-installed
+checking where to find the target c++... pre-installed
+checking where to find the target c++ for libstdc++... pre-installed
+checking where to find the target dlltool... just compiled
+checking where to find the target gcc... pre-installed
+checking where to find the target gfortran... pre-installed
+checking where to find the target gccgo... pre-installed
+checking where to find the target ld... just compiled
+checking where to find the target lipo... pre-installed
+checking where to find the target nm... just compiled
+checking where to find the target objcopy... just compiled
+checking where to find the target objdump... just compiled
+checking where to find the target ranlib... just compiled
+checking where to find the target readelf... just compiled
+checking where to find the target strip... just compiled
+checking where to find the target windres... just compiled
+checking where to find the target windmc... just compiled
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile

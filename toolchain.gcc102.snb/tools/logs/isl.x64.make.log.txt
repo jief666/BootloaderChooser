@@ -1,0 +1,12 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdep.a(dep.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libdep.a(dep.o) has no symbols
+warning: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: warning for library: libdep.a the table of contents is empty (no object file members in the library define global symbols)
+/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/isl-0.22.1/isl_test_cpp.cc:34:9: warning: 'assert' macro redefined [-Wmacro-redefined]
+#define assert(exp) assert_impl(exp, __FILE__, __LINE__, #exp)
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/assert.h:92:9: note: previous definition is here
+#define assert(e) \
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libisl.a(isl_ffs.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libisl.a(isl_ffs.o) has no symbols
+1 warning generated.

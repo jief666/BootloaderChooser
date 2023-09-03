@@ -1,0 +1,196 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-apple-darwin18.7.0
+checking host system type... x86_64-apple-darwin18.7.0
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether configure options are compatible... yes
+checking for CC and CFLAGS in gmp.h... CC=gcc CFLAGS=-O2 -fomit-frame-pointer -m64 -mtune=sandybridge -march=sandybridge
+checking for CC=gcc and CFLAGS=-O2 -fomit-frame-pointer -m64 -mtune=sandybridge -march=sandybridge... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... ld
+checking if the linker (ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert x86_64-apple-darwin18.7.0 file names to x86_64-apple-darwin18.7.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin18.7.0 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin18.7.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for non-MS-Windows ICC... no
+checking whether the selected language is C++... no
+checking if the compiler understands -Wl,-search_paths_first... yes
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether byte ordering is bigendian... no
+checking for library containing clock_gettime... none required
+checking for main in -lm... yes
+checking for main in -lquadmath... no
+checking whether time.h and sys/time.h may both be included... yes
+checking for size_t... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for string.h... (cached) yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/fpu.h usability... no
+checking sys/fpu.h presence... no
+checking for sys/fpu.h... no
+checking for struct lconv.decimal_point... yes
+checking for struct lconv.thousands_sep... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for uintptr_t... yes
+checking how to copy va_list... va_copy
+checking for setlocale... yes
+checking for gettimeofday... yes
+checking for signal... yes
+checking for sigaction and its associated structure... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for working INTMAX_MAX... yes
+checking for union fpc_csr... no
+checking for _Noreturn... yes
+checking for __builtin_unreachable... yes
+checking for constructor and destructor attributes... yes
+checking for fesetround... yes
+checking for gcc float-conversion bug... no
+checking for subnormal double-precision numbers... yes
+checking for subnormal single-precision numbers... yes
+checking for signed zeros... yes
+checking if the FP division by 0 fails... no
+checking if NAN == NAN... no
+checking if charset has consecutive values... yes
+checking for math/round... yes
+checking for math/trunc... yes
+checking for math/floor... yes
+checking for math/ceil... yes
+checking for math/nearbyint... yes
+checking for _mulx_u64... no
+checking format of floating-point type `double'... IEEE double, little endian
+checking format of floating-point type `long double'... IEEE extended, little endian (16 bytes)
+checking for TLS support using C11... yes
+checking if compiler knows _Decimal64... no
+checking bit-field ordering for _Decimal128... unavailable or unknown
+checking if _Float128 with hex constants is supported... no
+checking if __float128 can be used as a fallback... no
+checking for Static Assertion support... yes
+checking whether gcc __attribute__ ((mode (XX))) works... yes
+checking for gmp.h... yes
+checking for recent GMP... yes
+checking usable gmp.h at link time... yes
+checking for GMP_NUMB_BITS and sizeof(mp_limb_t) consistency... yes
+checking for __gmpz_init in -lgmp... yes
+checking if gmp.h version and libgmp version are the same... (6.2.0/6.2.0) yes
+checking for GMP library vs header correctness... yes
+checking for double-to-integer conversion bug... no
+checking if gmp_printf supports "%jd"... yes
+checking if gmp_printf supports "%hhd"... yes
+checking if gmp_printf supports "%lld"... yes
+checking if gmp_printf supports "%Lf"... yes
+checking if gmp_printf supports "%td"... yes
+checking if gmp_printf supports the ' group flag... yes
+checking for __gmpn_sbpi1_divappr_q... yes
+checking for __gmpn_invert_limb... yes
+checking for __gmpn_rsblsh1_n... yes
+checking for long to fit in mp_limb_t... yes
+checking for intmax_t to fit in mp_limb_t... yes
+checking for getrusage... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating mpfr.pc
+config.status: creating doc/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tune/Makefile
+config.status: creating src/mparam.h
+config.status: creating tools/bench/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands

@@ -1,0 +1,35 @@
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/doc/FAQ.html '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/doc/mpfr.info '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info'
+ install-info --info-dir='/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info' '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/info/mpfr.info'
+Making install in src
+make  install-am
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libmpfr.la '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib'
+libtool: install: /usr/bin/install -c .libs/libmpfr.6.dylib /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libmpfr.6.dylib
+libtool: install: (cd /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib && { ln -s -f libmpfr.6.dylib libmpfr.dylib || { rm -f libmpfr.dylib && ln -s libmpfr.6.dylib libmpfr.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libmpfr.lai /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libmpfr.la
+libtool: install: /usr/bin/install -c .libs/libmpfr.a /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libmpfr.a
+libtool: install: chmod 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libmpfr.a
+libtool: install: ranlib /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/libmpfr.a
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/include'
+ /usr/bin/install -c -m 644 /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/src/mpfr.h /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/src/mpf2mpfr.h '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/include'
+Making install in tests
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in tune
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in tools/bench
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Nothing to be done for `install-exec-am'.
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr/examples'
+ /usr/bin/install -c -m 644  /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/ReadMe /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/can_round.c /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/divworst.c /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/rndo-add.c /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/sample.c /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/threads.c /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/examples/version.c '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr/examples'
+ /usr/bin/install -c -m 644  /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/AUTHORS /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/BUGS /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/COPYING /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/COPYING.LESSER /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/NEWS /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/TODO '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/share/doc/mpfr/.'
+ /JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/tools/gcc/mpfr-4.1.0/install-sh -c -d '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/pkgconfig'
+ /usr/bin/install -c -m 644 mpfr.pc '/JiefLand/5.Devel/Clover/Clover-projects/CloverBootloader/toolchain/lib/pkgconfig'
