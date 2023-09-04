@@ -544,9 +544,7 @@ VOID OptionsMenu(OUT REFIT_ABSTRACT_MENU_ENTRY **ChosenEntry)
   if (OptionMenu.Entries.size() == 0) {
     OptionMenu.ID = 0;
 
-    REFIT_INPUT_DIALOG *menuItemInputDefaultVolume = OptionMenu.AddMenuItemInput("Default volume: ", TRUE);
-    menuItemInputDefaultVolume->Item.ItemType = ASString;
-    menuItemInputDefaultVolume->Item.SValue.SWPrintf("%ls", gSettings.DefaultVolume.wc_str());
+    OptionMenu.AddMenuEntry( &MenuEntryReturn, false);
 
     REFIT_INPUT_DIALOG *menuItemInputTimeOut = OptionMenu.AddMenuItemInput("Timeout: ", TRUE);
     menuItemInputTimeOut->Item.ItemType = Decimal;
@@ -555,6 +553,10 @@ VOID OptionsMenu(OUT REFIT_ABSTRACT_MENU_ENTRY **ChosenEntry)
     REFIT_INPUT_DIALOG* menuItemLog = OptionMenu.AddMenuItemInput("Save debug log", false);
     menuItemLog->Item.ItemType = BoolValue;
     menuItemLog->Item.BValue = gSettings.SaveDebugLogToDisk;
+
+    REFIT_INPUT_DIALOG *menuItemInputDefaultVolume = OptionMenu.AddMenuItemInput("Default volume: ", TRUE);
+    menuItemInputDefaultVolume->Item.ItemType = ASString;
+    menuItemInputDefaultVolume->Item.SValue.SWPrintf("%ls", gSettings.DefaultVolume.wc_str());
 
 //    AddMenuItemInput(&OptionMenu, 90, "Config:", TRUE);
 //   InputBootArgs->ShortcutDigit = 0xF1;
@@ -570,7 +572,7 @@ VOID OptionsMenu(OUT REFIT_ABSTRACT_MENU_ENTRY **ChosenEntry)
 //    OptionMenu.AddMenuEntry( SubMenuAudio(), true);
 //    OptionMenu.AddMenuEntry( SubMenuAudioPort(), true);
 //    OptionMenu.AddMenuEntry( SubMenuSystem(), true);
-    OptionMenu.AddMenuEntry( &MenuEntryReturn, false);
+//    OptionMenu.AddMenuEntry( &MenuEntryReturn, false);
     //DBG("option menu created entries=%d\n", OptionMenu.Entries.size());
   }
 

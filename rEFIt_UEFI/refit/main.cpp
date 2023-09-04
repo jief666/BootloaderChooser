@@ -515,7 +515,7 @@ RefitMain (IN EFI_HANDLE           ImageHandle,
     if ( !EFI_ERROR(Status) ) DBG("BootloaderChooserX64 : Image base = 0x%llX\n", (uintptr_t)LoadedImage->ImageBase); // do not change, it's used by grep to feed the debugger
 
 #if defined(JIEF_DEBUG) && defined(DEBUG_ON_SERIAL_PORT)
-    gBS->Stall(3500000); // to give time to gdb to connect. Only needed if you want to put a breakpoint soon after this line.
+//    gBS->Stall(3500000); // to give time to gdb to connect. Only needed if you want to put a breakpoint soon after this line.
 #endif
   }
 
