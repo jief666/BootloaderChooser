@@ -46,7 +46,7 @@
 #include "../Settings/Self.h"
 
 #ifndef DEBUG_ALL
-#define DEBUG_SCAN_LOADER 0
+#define DEBUG_SCAN_LOADER 1
 #else
 #define DEBUG_SCAN_LOADER DEBUG_ALL
 #endif
@@ -268,7 +268,7 @@ VOID ScanLoaders(VOID)
 
           XStringW path = SWPrintf("\\%ls\\%ls\\%ls", rootFolderEntry->FileName, subDirEntry->FileName, subsubDirIterEntry->FileName);
 
-          AddLoaderEntry(path, SWPrintf("[%ls] %ls", Volume->VolLabel.wc_str(), path.wc_str()), Volume);
+          AddLoaderEntry(path, SWPrintf("[%ls] %ls", Volume->getVolLabelOrOSXVolumeNameOrVolName().wc_str(), path.wc_str()), Volume);
 
           if ( filename.rindexOf(".efi") == filenameLength-strlen(".efi") ) {
           }
