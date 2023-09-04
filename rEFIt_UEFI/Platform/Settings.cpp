@@ -53,6 +53,7 @@ XString8Array                   ConfigsList;
 // global configuration with default values
 REFIT_CONFIG   GlobalConfig;
 
+bool forceRewrite = false;
 
 
 
@@ -89,16 +90,22 @@ LoadUserSettings (
     DBG("config.plist parse error Status=%s\n", efiStrError(Status));
     return Status;
   }
+  if ( ConfigPtr.size() > 0 ) {
+    ConfigPtr[ConfigPtr.size()-1] = 0;
+    if ( !strstr((char*)ConfigPtr.data(), "</plist>") ) {
+      forceRewrite = true;
+    }
+  }
   // free configPtr ?
   return Status;
 }
 
 
-
 void savePreferencesFile()
 {
 
-  if ( gSettings.GUITimeOut != gSettings.GUITimeOutFromConfig ||
+  if ( forceRewrite ||
+       gSettings.GUITimeOut != gSettings.GUITimeOutFromConfig ||
        gSettings.DefaultVolume != gSettings.DefaultVolumeFromConfig ||
        gSettings.SaveDebugLogToDisk != gSettings.SaveDebugLogToDiskFromConfig ) {
 
@@ -112,9 +119,10 @@ void savePreferencesFile()
     buf += S8Printf("    <integer>%lld</integer>\n", gSettings.GUITimeOut);
     buf += S8Printf("    <key>DefaultVolume</key>\n");
     buf += S8Printf("    <string>%ls</string>\n", gSettings.DefaultVolume.wc_str());
-    buf += S8Printf("    <key>debug</key>\n");
+    buf += S8Printf("    <key>Debug</key>\n");
     buf += S8Printf("    <string>%s</string>\n", gSettings.SaveDebugLogToDisk ? "true" : "false");
     buf += S8Printf("</dict>\n");
+    buf += S8Printf("</plist>\n");
 
     egSaveFile(&self.getCloverDir(), L"BLC.plist", buf.data(), buf.length());
   }
@@ -155,7 +163,7 @@ GetUserSettings (const TagDict* CfgDict)
     }
   }
   {
-    const TagStruct* Prop = CfgDict->propertyForKey("debug");
+    const TagStruct* Prop = CfgDict->propertyForKey("Debug");
     if ( Prop  && !Prop->isTrueOrYes() && !Prop->isFalseOrNn() ) {
       MsgLog("MALFORMED plist. debug must be true or false");
     }
