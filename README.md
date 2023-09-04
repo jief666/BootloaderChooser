@@ -38,10 +38,8 @@ When you need the menu back, just boot your computer with a key pressed.
 
 Booting Clover and OC from a folder not named CLOVER or OC :
 
-- Clover : you need a new Clover
-- old versions of OpenCore : doesn't want to start in anything else than EFI\OC. You need my version slightly modified.
-  - 0.6.1 : [OpenCore-v0.6.1-reloc.efi](efi_files/OpenCore-v0.6.1-reloc.efi). This is a strict 0.6.1 version.
-  - commit fd548b3 : [OpenCore-fd548b3-reloc.efi](efi_files/OpenCore-fd548b3-reloc.efi)
+- Clover : you need Clover version 5126 or later. If you use an earlier Clover, BootloaderChooser will refuse to start it.
+- OpenCore : you need a version 0.6.4 and later. ATTENTION, if you use a previous version of OC in a renamed folder, it will silently use config.plist, drivers, kext, etc... from EFI\OC instead.
 
 
 
